@@ -1,6 +1,20 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalDependencies": ["**/.env.*local"],
+  "globalDependencies": [
+    "**/.env.*local",
+    "**/.env",
+    "**/pnpm-lock.yaml",
+    "**/package.json",
+    "**/next.config.js",
+    "**/tailwind.config.js",
+    "**/tsconfig*.json"
+  ],
+  "env": [
+    "NODE_ENV",
+    "NEXT_PUBLIC_*",
+    "STORYBOOK_*",
+    "VITE_*"
+  ],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
@@ -9,38 +23,102 @@
         "!.next/cache/**",
         "dist/**",
         "storybook-static/**"
+      ],
+      "inputs": [
+        "src/**/*",
+        "**/*.{ts,tsx,js,jsx,json}",
+        "**/package.json",
+        "**/tsconfig*.json",
+        "**/next.config.js",
+        "**/tailwind.config.js"
       ]
     },
     "dev": {
       "cache": false,
-      "persistent": true
+      "persistent": true,
+      "inputs": [
+        "src/**/*",
+        "**/*.{ts,tsx,js,jsx,json}",
+        "**/package.json",
+        "**/tsconfig*.json",
+        "**/next.config.js",
+        "**/tailwind.config.js"
+      ]
     },
     "lint": {
-      "dependsOn": ["^lint"]
+      "dependsOn": ["^lint"],
+      "inputs": [
+        "**/*.{ts,tsx,js,jsx}",
+        "**/eslint.config.js",
+        "**/.eslintrc*",
+        "**/package.json"
+      ],
+      "outputs": ["eslint-report.json"]
     },
     "lint:fix": {
-      "dependsOn": ["^lint:fix"]
+      "dependsOn": ["^lint:fix"],
+      "inputs": [
+        "**/*.{ts,tsx,js,jsx}",
+        "**/eslint.config.js",
+        "**/.eslintrc*",
+        "**/package.json"
+      ]
     },
     "test": {
-      "dependsOn": ["^build"],
-      "outputs": ["coverage/**"]
+      "dependsOn": ["^test"],
+      "inputs": [
+        "src/**/*",
+        "**/*.{test,spec}.{ts,tsx,js,jsx}",
+        "**/vitest.config.ts",
+        "**/vite.config.ts",
+        "**/package.json",
+        "**/tsconfig*.json"
+      ],
+      "outputs": ["coverage/**", "test-results/**"]
     },
     "test:watch": {
       "cache": false,
-      "persistent": true
+      "persistent": true,
+      "inputs": [
+        "src/**/*",
+        "**/*.{test,spec}.{ts,tsx,js,jsx}",
+        "**/vitest.config.ts",
+        "**/vite.config.ts",
+        "**/package.json",
+        "**/tsconfig*.json"
+      ]
     },
     "type-check": {
-      "dependsOn": ["^build"]
+      "dependsOn": ["^type-check"],
+      "inputs": [
+        "**/*.{ts,tsx}",
+        "**/tsconfig*.json",
+        "**/package.json"
+      ]
     },
     "clean": {
       "cache": false
     },
     "storybook": {
       "cache": false,
-      "persistent": true
+      "persistent": true,
+      "inputs": [
+        "src/**/*",
+        "**/*.stories.{ts,tsx,js,jsx}",
+        "**/package.json",
+        "**/tsconfig*.json",
+        "**/tailwind.config.js"
+      ]
     },
     "build-storybook": {
-      "dependsOn": ["^build"],
+      "dependsOn": ["^build-storybook"],
+      "inputs": [
+        "src/**/*",
+        "**/*.stories.{ts,tsx,js,jsx}",
+        "**/package.json",
+        "**/tsconfig*.json",
+        "**/tailwind.config.js"
+      ],
       "outputs": ["storybook-static/**"]
     }
   }
