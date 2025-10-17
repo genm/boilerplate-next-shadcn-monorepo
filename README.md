@@ -75,7 +75,7 @@ The fastest way to get started is using this template:
 ```bash
 # Using GitHub Template Repository
 # Click "Use this template" button on GitHub, or:
-git clone https://github.com/your-username/turborepo-nextjs-shadcn-starter.git my-project
+git clone https://github.com/genm/turborepo-nextjs-shadcn-starter.git my-project
 cd my-project
 ```
 
@@ -278,9 +278,9 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 
 ### Getting Help
 
-- Check the [Issues](https://github.com/your-username/turborepo-nextjs-shadcn-starter/issues) page
+- Check the [Issues](https://github.com/genm/turborepo-nextjs-shadcn-starter/issues) page
 - Review the [Contributing Guide](CONTRIBUTING.md)
-- Ask questions in [GitHub Discussions](https://github.com/your-username/turborepo-nextjs-shadcn-starter/discussions)
+- Ask questions in [GitHub Discussions](https://github.com/genm/turborepo-nextjs-shadcn-starter/discussions)
 
 ## 🎯 Using as Template
 
