@@ -13,6 +13,8 @@ module.exports = {
     "vite.config.ts",
     "vitest.config.ts",
     "tsup.config.ts",
+    ".storybook/**",
+    ".eslintrc.js",
     "dist/**",
     "node_modules/**",
   ],
