@@ -9,7 +9,7 @@
     "**/tailwind.config.js",
     "**/tsconfig*.json"
   ],
-  "env": [
+  "globalEnv": [
     "NODE_ENV",
     "NEXT_PUBLIC_*",
     "STORYBOOK_*",
