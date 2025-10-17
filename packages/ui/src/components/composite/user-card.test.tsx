@@ -8,7 +8,7 @@ describe("UserCard", () => {
       <UserCard
         name="John Doe"
         email="john.doe@example.com"
-        role="Software Engineer"
+        jobTitle="Software Engineer"
       />
     );
 
@@ -85,6 +85,7 @@ describe("UserCard", () => {
       <UserCard
         name="Christopher Alexander Johnson-Williams"
         email="christopher.alexander.johnson.williams@verylongdomainname.example.com"
+        jobTitle="Principal Engineer"
       />
     );
 
@@ -96,5 +97,6 @@ describe("UserCard", () => {
         "christopher.alexander.johnson.williams@verylongdomainname.example.com"
       )
     ).toBeInTheDocument();
+    expect(screen.getByText("Principal Engineer")).toBeInTheDocument();
   });
 });

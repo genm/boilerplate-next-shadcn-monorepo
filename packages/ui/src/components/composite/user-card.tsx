@@ -13,14 +13,14 @@ export interface UserCardProps {
   name: string;
   email: string;
   avatar?: string;
-  role?: string;
+  jobTitle?: string;
   onEdit?: () => void;
   onDelete?: () => void;
   className?: string;
 }
 
 const UserCard = React.forwardRef<HTMLDivElement, UserCardProps>(
-  ({ name, email, avatar, role, onEdit, onDelete, className }, ref) => {
+  ({ name, email, avatar, jobTitle, onEdit, onDelete, className }, ref) => {
     return (
       <Card ref={ref} className={cn("w-full max-w-sm", className)}>
         <CardHeader className="pb-3">
@@ -40,9 +40,13 @@ const UserCard = React.forwardRef<HTMLDivElement, UserCardProps>(
             )}
             <div className="flex-1 min-w-0">
               <CardTitle className="text-base truncate">{name}</CardTitle>
-              {role && (
-                <CardDescription className="text-xs text-muted-foreground">
-                  {role}
+              {jobTitle && (
+                <CardDescription
+                  aria-label={`${name}'s job title`}
+                  className="text-xs text-muted-foreground"
+                  role="note"
+                >
+                  {jobTitle}
                 </CardDescription>
               )}
             </div>

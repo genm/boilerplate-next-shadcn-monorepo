@@ -21,9 +21,9 @@ const meta: Meta<typeof UserCard> = {
       control: "text",
       description: "URL to user's avatar image",
     },
-    role: {
+    jobTitle: {
       control: "text",
-      description: "User's role or title",
+      description: "User's job title",
     },
     onEdit: {
       action: "edit",
@@ -43,7 +43,7 @@ export const Default: Story = {
   args: {
     name: "John Doe",
     email: "john.doe@example.com",
-    role: "Software Engineer",
+    jobTitle: "Software Engineer",
   },
 };
 
@@ -53,7 +53,7 @@ export const WithAvatar: Story = {
     email: "jane.smith@example.com",
     avatar:
       "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
-    role: "Product Manager",
+    jobTitle: "Product Manager",
   },
 };
 
@@ -61,7 +61,7 @@ export const WithoutActions: Story = {
   args: {
     name: "Bob Johnson",
     email: "bob.johnson@example.com",
-    role: "Designer",
+    jobTitle: "Designer",
   },
   argTypes: {
     onEdit: { table: { disable: true } },
@@ -74,7 +74,7 @@ export const LongName: Story = {
     name: "Christopher Alexander Johnson-Williams",
     email:
       "christopher.alexander.johnson.williams@verylongdomainname.example.com",
-    role: "Senior Full Stack Developer",
+    jobTitle: "Senior Full Stack Developer",
   },
 };
 
@@ -84,7 +84,7 @@ export const Minimal: Story = {
     email: "alice@example.com",
   },
   argTypes: {
-    role: { table: { disable: true } },
+    jobTitle: { table: { disable: true } },
     onEdit: { table: { disable: true } },
     onDelete: { table: { disable: true } },
   },
