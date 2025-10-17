@@ -9,12 +9,7 @@
     "**/tailwind.config.js",
     "**/tsconfig*.json"
   ],
-  "globalEnv": [
-    "NODE_ENV",
-    "NEXT_PUBLIC_*",
-    "STORYBOOK_*",
-    "VITE_*"
-  ],
+  "globalEnv": ["NODE_ENV", "NEXT_PUBLIC_*", "STORYBOOK_*", "VITE_*"],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
@@ -90,11 +85,7 @@
     },
     "type-check": {
       "dependsOn": ["^type-check"],
-      "inputs": [
-        "**/*.{ts,tsx}",
-        "**/tsconfig*.json",
-        "**/package.json"
-      ]
+      "inputs": ["**/*.{ts,tsx}", "**/tsconfig*.json", "**/package.json"]
     },
     "clean": {
       "cache": false

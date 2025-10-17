@@ -22,7 +22,7 @@
     "lint": "eslint . --max-warnings 0",
     "lint:fix": "eslint . --fix",
     "type-check": "tsc --noEmit",
-    "test": "vitest",
+    "test": "vitest run",
     "test:watch": "vitest --watch",
     "clean": "rm -rf dist",
     "storybook": "storybook dev -p 6007",
@@ -30,13 +30,47 @@
   },
   "turbo": {
     "inputs": {
-      "build": ["src/**/*", "tsup.config.ts", "tsconfig.json", "tailwind.config.js"],
-      "dev": ["src/**/*", "tsup.config.ts", "tsconfig.json", "tailwind.config.js"],
-      "lint": ["src/**/*", "eslint.config.js", "tsconfig.json"],
-      "type-check": ["src/**/*", "tsconfig.json"],
-      "test": ["src/**/*", "**/*.{test,spec}.{ts,tsx}", "vitest.config.ts", "tsconfig.json"],
-      "storybook": ["src/**/*", "**/*.stories.{ts,tsx}", "**/storybook/**/*", "vite.config.ts", "tailwind.config.js"],
-      "build-storybook": ["src/**/*", "**/*.stories.{ts,tsx}", "**/storybook/**/*", "vite.config.ts", "tailwind.config.js"]
+      "build": [
+        "src/**/*",
+        "tsup.config.ts",
+        "tsconfig.json",
+        "tailwind.config.js"
+      ],
+      "dev": [
+        "src/**/*",
+        "tsup.config.ts",
+        "tsconfig.json",
+        "tailwind.config.js"
+      ],
+      "lint": [
+        "src/**/*",
+        "eslint.config.js",
+        "tsconfig.json"
+      ],
+      "type-check": [
+        "src/**/*",
+        "tsconfig.json"
+      ],
+      "test": [
+        "src/**/*",
+        "**/*.{test,spec}.{ts,tsx}",
+        "vitest.config.ts",
+        "tsconfig.json"
+      ],
+      "storybook": [
+        "src/**/*",
+        "**/*.stories.{ts,tsx}",
+        "**/storybook/**/*",
+        "vite.config.ts",
+        "tailwind.config.js"
+      ],
+      "build-storybook": [
+        "src/**/*",
+        "**/*.stories.{ts,tsx}",
+        "**/storybook/**/*",
+        "vite.config.ts",
+        "tailwind.config.js"
+      ]
     }
   },
   "dependencies": {
