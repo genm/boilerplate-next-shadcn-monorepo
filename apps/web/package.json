@@ -5,13 +5,23 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "lint": "next lint",
-    "lint:fix": "next lint --fix",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "eslint . --fix",
     "start": "next start",
     "type-check": "tsc --noEmit",
     "clean": "rm -rf .next",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
+  },
+  "turbo": {
+    "inputs": {
+      "build": ["src/**/*", "public/**/*", "next.config.js", "tailwind.config.js", "tsconfig.json"],
+      "dev": ["src/**/*", "public/**/*", "next.config.js", "tailwind.config.js", "tsconfig.json"],
+      "lint": ["src/**/*", "eslint.config.js", "tsconfig.json"],
+      "type-check": ["src/**/*", "tsconfig.json", "next-env.d.ts"],
+      "storybook": ["src/**/*", "**/*.stories.{ts,tsx}", "**/storybook/**/*", "tailwind.config.js"],
+      "build-storybook": ["src/**/*", "**/*.stories.{ts,tsx}", "**/storybook/**/*", "tailwind.config.js"]
+    }
   },
   "dependencies": {
     "@repo/ui": "workspace:*",

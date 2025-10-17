@@ -28,6 +28,17 @@
     "storybook": "storybook dev -p 6007",
     "build-storybook": "storybook build"
   },
+  "turbo": {
+    "inputs": {
+      "build": ["src/**/*", "tsup.config.ts", "tsconfig.json", "tailwind.config.js"],
+      "dev": ["src/**/*", "tsup.config.ts", "tsconfig.json", "tailwind.config.js"],
+      "lint": ["src/**/*", "eslint.config.js", "tsconfig.json"],
+      "type-check": ["src/**/*", "tsconfig.json"],
+      "test": ["src/**/*", "**/*.{test,spec}.{ts,tsx}", "vitest.config.ts", "tsconfig.json"],
+      "storybook": ["src/**/*", "**/*.stories.{ts,tsx}", "**/storybook/**/*", "vite.config.ts", "tailwind.config.js"],
+      "build-storybook": ["src/**/*", "**/*.stories.{ts,tsx}", "**/storybook/**/*", "vite.config.ts", "tailwind.config.js"]
+    }
+  },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.0",
