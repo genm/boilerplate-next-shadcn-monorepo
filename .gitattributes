@@ -1,0 +1,18 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Force LF line endings for these file types
+*.{js,ts,tsx,jsx,json,md,yml,yaml} text eol=lf
+
+# Binary files
+*.{png,jpg,jpeg,gif,ico,svg,woff,woff2,ttf,eot} binary
+
+# Package files
+*.tgz binary
+*.tar.gz binary
+*.zip binary
+
+# Lock files
+pnpm-lock.yaml text eol=lf
+package-lock.json text eol=lf
+yarn.lock text eol=lf

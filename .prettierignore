@@ -1,0 +1,11 @@
+node_modules
+.next
+dist
+build
+storybook-static
+coverage
+.turbo
+*.log
+
+# shadcn primitive components
+packages/ui/src/components/shadcn/*.tsx

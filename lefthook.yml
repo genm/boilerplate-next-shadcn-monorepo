@@ -1,0 +1,24 @@
+pre-commit:
+  parallel: true
+  commands:
+    lint:
+      run: pnpm lint
+      files: git diff --cached --name-only --diff-filter=ACMR | grep -E '\.(js|ts|jsx|tsx|json)$'
+      stage_fixed: true
+    type-check:
+      run: pnpm type-check
+      files: git diff --cached --name-only --diff-filter=ACMR | grep -E '\.(ts|tsx)$'
+    format:
+      run: pnpm format:check
+      files: git diff --cached --name-only --diff-filter=ACMR | grep -E '\.(js|ts|jsx|tsx|json|md)$'
+      stage_fixed: true
+
+pre-push:
+  parallel: true
+  commands:
+    test:
+      run: pnpm test
+      files: git diff --name-only | grep -E '\.(js|ts|jsx|tsx)$'
+    build:
+      run: pnpm build
+      files: git diff --name-only | grep -E '\.(js|ts|jsx|tsx|json)$'

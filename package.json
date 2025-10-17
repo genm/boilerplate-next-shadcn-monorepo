@@ -1,0 +1,50 @@
+{
+  "name": "turborepo-nextjs-shadcn-starter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Next.js 15 + React 19 + shadcn/ui + Storybook v9 + Turborepo boilerplate",
+  "keywords": [
+    "nextjs",
+    "react",
+    "turborepo",
+    "shadcn-ui",
+    "monorepo",
+    "boilerplate",
+    "typescript",
+    "tailwindcss"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/turborepo-nextjs-shadcn-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/turborepo-nextjs-shadcn-starter/issues"
+  },
+  "homepage": "https://github.com/your-username/turborepo-nextjs-shadcn-starter#readme",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "test": "turbo run test",
+    "test:watch": "turbo run test:watch",
+    "type-check": "turbo run type-check",
+    "clean": "turbo run clean",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "storybook": "turbo run storybook",
+    "build-storybook": "turbo run build-storybook"
+  },
+  "devDependencies": {
+    "@turbo/gen": "^1.12.4",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "turbo": "^1.12.4",
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "pnpm@10.18.3",
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=10.0.0"
+  }
+}
