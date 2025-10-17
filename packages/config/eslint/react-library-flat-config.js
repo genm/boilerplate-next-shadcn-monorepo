@@ -1,10 +1,10 @@
 const reactPlugin = require("eslint-plugin-react");
 const reactHooksPlugin = require("eslint-plugin-react-hooks");
 const jsxA11yPlugin = require("eslint-plugin-jsx-a11y");
-const baseConfig = require("./flat-config");
+const createBaseConfig = require("./flat-config");
 
-module.exports = [
-  ...baseConfig,
+const createReactLibraryConfig = (options = {}) => [
+  ...createBaseConfig(options),
   {
     files: ["**/*.{js,jsx,ts,tsx}"],
     plugins: {
@@ -23,3 +23,5 @@ module.exports = [
     },
   },
 ];
+
+module.exports = createReactLibraryConfig;

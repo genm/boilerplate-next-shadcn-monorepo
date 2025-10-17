@@ -1,8 +1,8 @@
 const nextPlugin = require("@next/eslint-plugin-next");
-const baseConfig = require("./flat-config");
+const createBaseConfig = require("./flat-config");
 
-module.exports = [
-  ...baseConfig,
+const createNextConfig = (options = {}) => [
+  ...createBaseConfig(options),
   {
     files: ["**/*.{js,jsx,ts,tsx}"],
     plugins: {
@@ -14,3 +14,5 @@ module.exports = [
     },
   },
 ];
+
+module.exports = createNextConfig;
