@@ -1,7 +1,13 @@
 # Turborepo Next.js shadcn Starter
 
+[![CI](https://github.com/genm/turborepo-nextjs-shadcn-starter/actions/workflows/ci.yml/badge.svg)](https://github.com/genm/turborepo-nextjs-shadcn-starter/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Template Repository](https://img.shields.io/badge/Template-Repository-blue)](https://github.com/genm/turborepo-nextjs-shadcn-starter/generate)
+[![Turbo](https://img.shields.io/badge/Turbo-2.5.8-000000?logo=turbo&logoColor=white)](https://turbo.build)
+[![Next.js](https://img.shields.io/badge/Next.js-15-000000?logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38BDF8?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![ESLint](https://img.shields.io/badge/ESLint-v9-4B32C3?logo=eslint&logoColor=white)](https://eslint.org/)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D22.0.0-brightgreen)](https://nodejs.org/)
 [![pnpm](https://img.shields.io/badge/pnpm-%3E%3D10.0.0-orange)](https://pnpm.io/)
 
@@ -15,7 +21,7 @@ A modern monorepo boilerplate with Next.js 15, React 19, shadcn/ui, Storybook v9
 - **Monorepo**: Turborepo with pnpm workspaces
 - **Storybook**: v9 with Vite builder
 - **Testing**: Vitest
-- **Linting**: ESLint + Prettier
+- **Linting**: ESLint v9 + Prettier
 - **Git Hooks**: lefthook
 
 ## ✨ Features
@@ -25,7 +31,7 @@ A modern monorepo boilerplate with Next.js 15, React 19, shadcn/ui, Storybook v9
 - 🎨 **shadcn/ui**: Beautiful, accessible components with Tailwind CSS v4
 - 📚 **Storybook v9**: Component development and documentation
 - 🧪 **Testing**: Vitest for fast unit testing
-- 🔧 **Developer Experience**: ESLint, Prettier, TypeScript, and Git hooks
+- 🔧 **Developer Experience**: ESLint v9, Prettier, TypeScript, and Git hooks
 - 📦 **Package Management**: pnpm for efficient dependency management
 - 🚀 **Production Ready**: Optimized builds and deployment configurations
 
@@ -61,7 +67,7 @@ This project uses Node.js 22. You can use the following tools to manage Node.js 
 
 ### Quick Start
 
-The fastest way to get started is using this template:
+This is a GitHub Template Repository. To use this template:
 
 1. Click the **"Use this template"** button on GitHub
 2. Create a new repository from this template
@@ -70,13 +76,11 @@ The fastest way to get started is using this template:
 
 ### Installation
 
-1. Clone the repository:
+1. After creating your repository from this template, clone it:
 
 ```bash
-# Using GitHub Template Repository
-# Click "Use this template" button on GitHub, or:
-git clone https://github.com/genm/turborepo-nextjs-shadcn-starter.git my-project
-cd my-project
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+cd YOUR_REPOSITORY_NAME
 ```
 
 2. Install dependencies:
@@ -268,7 +272,7 @@ export default function MyPage() {
 
 ### ESLint
 
-Shared ESLint configuration in `packages/config/eslint/`:
+Shared ESLint v9 configuration in `packages/config/eslint/`:
 
 - Base config for TypeScript
 - Next.js specific rules
