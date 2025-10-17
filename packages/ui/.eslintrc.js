@@ -3,18 +3,13 @@ module.exports = {
   extends: ["@repo/eslint-config/react-library"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
-    project: "./tsconfig.json",
+    project: [__dirname + '/tsconfig.eslint.json'],
+    tsconfigRootDir: __dirname,
   },
   env: {
     node: true,
   },
   ignorePatterns: [
-    "tailwind.config.js",
-    "vite.config.ts",
-    "vitest.config.ts",
-    "tsup.config.ts",
-    ".storybook/**",
-    ".eslintrc.js",
     "dist/**",
     "node_modules/**",
   ],

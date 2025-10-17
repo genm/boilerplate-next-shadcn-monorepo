@@ -1,0 +1,21 @@
+{
+  "extends": ["@repo/tsconfig/react-library.json"],
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": false,
+    "noEmit": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.js",
+    "src/**/*.jsx",
+    ".eslintrc.js",
+    ".storybook/**/*",
+    "tailwind.config.js",
+    "tsup.config.ts",
+    "vite.config.ts",
+    "vitest.config.ts",
+    "**/*.d.ts"
+  ]
+}
