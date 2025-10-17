@@ -5,11 +5,13 @@
 If you discover a security vulnerability, please report it using one of the following methods:
 
 ### Option 1: Private Security Advisory (Recommended)
+
 1. Go to the [Security tab](https://github.com/genm/turborepo-nextjs-shadcn-starter/security)
 2. Click "Report a vulnerability"
 3. Create a private security advisory with detailed information
 
 ### Option 2: GitHub Issues
+
 1. Create a new issue with the "security" label
 2. Mark it as private if needed
 3. Include:
@@ -19,6 +21,7 @@ If you discover a security vulnerability, please report it using one of the foll
    - Suggested fixes (if any)
 
 ### Option 3: GitHub Discussions
+
 1. Use the [Discussions](https://github.com/genm/turborepo-nextjs-shadcn-starter/discussions) for general security questions
 2. Create a new discussion in the "Security" category
 3. Use this for security-related questions and best practices
@@ -39,6 +42,7 @@ If you discover a security vulnerability, please report it using one of the foll
 ## Security Updates
 
 Security updates and advisories will be published in:
+
 - GitHub Security Advisories
 - Release notes
 - Project discussions

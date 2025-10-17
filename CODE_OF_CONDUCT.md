@@ -7,6 +7,7 @@ We are committed to providing a welcoming and inclusive experience for everyone,
 ## Our Standards
 
 ### Positive Behavior
+
 - Use welcoming and inclusive language
 - Be respectful of differing viewpoints and experiences
 - Accept constructive criticism gracefully
@@ -14,6 +15,7 @@ We are committed to providing a welcoming and inclusive experience for everyone,
 - Show empathy towards other community members
 
 ### Unacceptable Behavior
+
 - Harassment, trolling, or derogatory comments
 - Personal or political attacks
 - Publishing private information without permission

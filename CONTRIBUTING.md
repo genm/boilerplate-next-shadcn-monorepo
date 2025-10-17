@@ -21,6 +21,7 @@ Thank you for your interest in contributing to this project!
 ## Commit Messages
 
 Use conventional commits:
+
 - `feat:` - New features
 - `fix:` - Bug fixes
 - `docs:` - Documentation changes
