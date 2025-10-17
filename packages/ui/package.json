@@ -47,6 +47,7 @@
     "tailwind-merge": "^2.2.1"
   },
   "devDependencies": {
+    "@repo/config": "workspace:*",
     "@eslint/eslintrc": "^3.2.0",
     "@repo/tsconfig": "workspace:*",
     "@storybook/addon-links": "^9.1.12",
