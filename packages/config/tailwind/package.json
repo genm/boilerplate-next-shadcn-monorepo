@@ -8,6 +8,6 @@
     "tailwind.css"
   ],
   "dependencies": {
-    "tailwindcss": "^4.0.0-alpha.25"
+    "tailwindcss": "^4.0.0"
   }
 }
