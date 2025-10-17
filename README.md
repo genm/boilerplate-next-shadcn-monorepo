@@ -1,6 +1,6 @@
 # Turborepo Next.js shadcn Starter
 
-[![CI](https://github.com/genm/turborepo-nextjs-shadcn-starter/actions/workflows/ci.yml/badge.svg)](https://github.com/genm/turborepo-nextjs-shadcn-starter/actions/workflows/ci.yml)
+[![CI](https://img.shields.io/github/actions/workflow/status/genm/turborepo-nextjs-shadcn-starter/ci.yml?label=CI&logo=github)](https://github.com/genm/turborepo-nextjs-shadcn-starter/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Template Repository](https://img.shields.io/badge/Template-Repository-blue)](https://github.com/genm/turborepo-nextjs-shadcn-starter/generate)
 [![Turbo](https://img.shields.io/badge/Turbo-2.5.8-000000?logo=turbo&logoColor=white)](https://turbo.build)
