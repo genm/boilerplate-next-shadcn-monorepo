@@ -122,6 +122,66 @@ pnpm --filter @repo/ui storybook
 pnpm --filter @repo/ui test
 ```
 
+## 🚀 Turbo Remote Cache Setup
+
+This project is optimized for Turbo's remote caching capabilities. To enable remote caching:
+
+### 1. Create a Vercel Account (Recommended)
+
+1. Sign up at [vercel.com](https://vercel.com)
+2. Create a team or use your personal account
+3. Go to your team settings and find the "Turborepo" section
+4. Copy your team ID and token
+
+### 2. Configure Environment Variables
+
+Create a `.env.local` file in the root directory:
+
+```bash
+# Turbo Remote Cache Configuration
+TURBO_TEAM_ID=your-team-id
+TURBO_TOKEN=your-turbo-token
+
+# Next.js Environment Variables
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+
+# Storybook Environment Variables
+STORYBOOK_THEME=light
+STORYBOOK_VIEWPORT=desktop
+
+# Vite Environment Variables (for UI package)
+VITE_APP_NAME=UI Package
+```
+
+### 3. Login to Turbo Remote Cache
+
+```bash
+# Login to Turbo remote cache
+npx turbo login
+
+# Link your project to your team
+npx turbo link
+```
+
+### 4. Benefits of Remote Cache
+
+- **Faster CI/CD**: Build artifacts are shared across team members and CI environments
+- **Reduced Build Times**: Skip building unchanged packages
+- **Team Collaboration**: Share build outputs with your team
+- **Cost Savings**: Reduce CI minutes and local development time
+
+### 5. Cache Statistics
+
+View your cache usage and performance:
+
+```bash
+# Show cache statistics
+npx turbo run build --dry-run
+
+# Show detailed cache information
+npx turbo run build --summarize
+```
+
 ## 🎨 Storybook
 
 Each package has its own Storybook instance:
