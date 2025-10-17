@@ -8,6 +8,6 @@
     },
     "types": ["vitest/globals", "@testing-library/jest-dom"]
   },
-  "include": ["src", "eslint.config.js", "vitest.config.ts"],
+  "include": ["src", "eslint.config.js", "vitest.config.ts", "vite.config.ts"],
   "exclude": ["dist", "node_modules", "storybook-static"]
 }
