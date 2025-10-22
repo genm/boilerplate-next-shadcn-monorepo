@@ -60,9 +60,9 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@repo/config": "workspace:*",
     "@eslint/eslintrc": "^3.2.0",
     "@next/eslint-plugin-next": "^15.0.0",
+    "@repo/config": "workspace:*",
     "@repo/tsconfig": "workspace:*",
     "@storybook/addon-links": "^9.1.12",
     "@storybook/nextjs-vite": "^9.1.12",
