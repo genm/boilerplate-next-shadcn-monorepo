@@ -65,7 +65,7 @@
     "@next/eslint-plugin-next": "^15.0.0",
     "@repo/tsconfig": "workspace:*",
     "@storybook/addon-links": "^9.1.12",
-    "@storybook/nextjs": "^9.1.12",
+    "@storybook/nextjs-vite": "^9.1.12",
     "@storybook/react": "^9.1.12",
     "@types/node": "^20.11.0",
     "@types/react": "^19.0.0",
