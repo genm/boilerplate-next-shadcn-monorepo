@@ -84,7 +84,7 @@
       ]
     },
     "type-check": {
-      "dependsOn": ["^type-check"],
+      "dependsOn": ["^build"],
       "inputs": ["**/*.{ts,tsx}", "**/tsconfig*.json", "**/package.json"]
     },
     "clean": {
