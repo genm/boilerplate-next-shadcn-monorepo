@@ -34,13 +34,13 @@
         "src/**/*",
         "tsup.config.ts",
         "tsconfig.json",
-        "tailwind.config.js"
+        "tailwind.config.ts"
       ],
       "dev": [
         "src/**/*",
         "tsup.config.ts",
         "tsconfig.json",
-        "tailwind.config.js"
+        "tailwind.config.ts"
       ],
       "lint": [
         "src/**/*",
@@ -62,14 +62,14 @@
         "**/*.stories.{ts,tsx}",
         "**/storybook/**/*",
         "vite.config.ts",
-        "tailwind.config.js"
+        "tailwind.config.ts"
       ],
       "build-storybook": [
         "src/**/*",
         "**/*.stories.{ts,tsx}",
         "**/storybook/**/*",
         "vite.config.ts",
-        "tailwind.config.js"
+        "tailwind.config.ts"
       ]
     }
   },

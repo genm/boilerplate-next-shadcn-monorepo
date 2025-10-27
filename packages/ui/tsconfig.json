@@ -13,7 +13,7 @@
     "eslint.config.js",
     ".eslintrc.js",
     ".storybook/**/*",
-    "tailwind.config.js",
+    "tailwind.config.ts",
     "tsup.config.ts",
     "vitest.config.ts",
     "vite.config.ts"

@@ -12,7 +12,7 @@
     "src/**/*.jsx",
     ".eslintrc.js",
     ".storybook/**/*",
-    "tailwind.config.js",
+    "tailwind.config.ts",
     "tsup.config.ts",
     "vite.config.ts",
     "vitest.config.ts",

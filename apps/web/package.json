@@ -19,14 +19,14 @@
         "src/**/*",
         "public/**/*",
         "next.config.js",
-        "tailwind.config.js",
+        "tailwind.config.ts",
         "tsconfig.json"
       ],
       "dev": [
         "src/**/*",
         "public/**/*",
         "next.config.js",
-        "tailwind.config.js",
+        "tailwind.config.ts",
         "tsconfig.json"
       ],
       "lint": [
@@ -43,13 +43,13 @@
         "src/**/*",
         "**/*.stories.{ts,tsx}",
         "**/storybook/**/*",
-        "tailwind.config.js"
+        "tailwind.config.ts"
       ],
       "build-storybook": [
         "src/**/*",
         "**/*.stories.{ts,tsx}",
         "**/storybook/**/*",
-        "tailwind.config.js"
+        "tailwind.config.ts"
       ]
     }
   },
