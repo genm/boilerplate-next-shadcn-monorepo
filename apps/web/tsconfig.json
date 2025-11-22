@@ -16,7 +16,8 @@
     "eslint.config.js",
     ".storybook/**/*",
     "next.config.js",
-    "tailwind.config.ts"
+    "tailwind.config.ts",
+    "postcss.config.js"
   ],
   "exclude": ["node_modules", "storybook-static"]
 }
