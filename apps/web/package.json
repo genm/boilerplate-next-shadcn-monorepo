@@ -55,31 +55,31 @@
   },
   "dependencies": {
     "@repo/ui": "workspace:*",
-    "next": "^15.0.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "next": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.2.0",
-    "@next/eslint-plugin-next": "^15.0.0",
+    "@eslint/eslintrc": "catalog:",
+    "@next/eslint-plugin-next": "catalog:",
     "@repo/config": "workspace:*",
     "@repo/tsconfig": "workspace:*",
     "@storybook/addon-links": "catalog:",
     "@storybook/nextjs-vite": "catalog:",
     "@storybook/react": "catalog:",
-    "@tailwindcss/postcss": "^4.1.15",
+    "@tailwindcss/postcss": "catalog:",
     "@types/node": "^20.11.0",
-    "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0",
-    "@typescript-eslint/eslint-plugin": "^8.0.0",
-    "@typescript-eslint/parser": "^8.0.0",
-    "autoprefixer": "^10.4.17",
-    "eslint": "^9.37.0",
-    "eslint-config-next": "^15.0.0",
-    "eslint-config-prettier": "^9.1.0",
-    "postcss": "^8.4.33",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "@typescript-eslint/eslint-plugin": "catalog:",
+    "@typescript-eslint/parser": "catalog:",
+    "autoprefixer": "catalog:",
+    "eslint": "catalog:",
+    "eslint-config-next": "catalog:",
+    "eslint-config-prettier": "catalog:",
+    "postcss": "catalog:",
     "storybook": "catalog:",
-    "tailwindcss": "^4.0.0",
-    "typescript": "^5.3.3"
+    "tailwindcss": "catalog:",
+    "typescript": "catalog:"
   }
 }
